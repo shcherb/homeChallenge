@@ -1,5 +1,5 @@
-const { mapAccessibility, mapPrice } = require('../../src/utils/attributesMapper.util');
-const { accessibilityEnum, priceEnum } = require('../../src/config/constants');
+import { mapAccessibility, mapPrice } from '../../src/utils/attributesMapper.util.mjs';
+import { accessibilityEnum, priceEnum } from '../../src/config/constants.mjs';
 
 describe('Test of the accessibility and price mappers', () => {
   describe('Accessibility mapper test', () => {

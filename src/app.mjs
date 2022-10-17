@@ -1,11 +1,13 @@
-const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
-const openapiValidator = require('express-openapi-validator');
-
-const activityRouter = require('./routes/activity.route');
-
+import express from 'express';
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
+import openapiValidator from 'express-openapi-validator';
+import activityRouter from './routes/activity.route.mjs';
+import {fileURLToPath} from 'url';
+import { dirname } from 'path';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const app = express();
 
 app.use(logger('dev'));
@@ -31,4 +33,5 @@ app.use((err, req, res) => {
   });
 });
 
-module.exports = app;
+// module.exports = app;
+export default app;

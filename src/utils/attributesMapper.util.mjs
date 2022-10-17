@@ -1,6 +1,6 @@
-const { accessibilityEnum, priceEnum } = require('../config/constants');
+import { accessibilityEnum, priceEnum } from '../config/constants.mjs';
 
-function mapAccessibility(accessibility) {
+export function mapAccessibility(accessibility) {
   let accessibilityResult = accessibilityEnum.HIGH;
   if (accessibility > 0.75) {
     accessibilityResult = accessibilityEnum.LOW;
@@ -10,7 +10,7 @@ function mapAccessibility(accessibility) {
   return accessibilityResult;
 }
 
-function mapPrice(price) {
+export function mapPrice(price) {
   let priceResult = priceEnum.HIGH;
   if (price === 0) {
     priceResult = priceEnum.FREE;
@@ -19,8 +19,3 @@ function mapPrice(price) {
   }
   return priceResult;
 }
-
-module.exports = {
-  mapAccessibility,
-  mapPrice,
-};

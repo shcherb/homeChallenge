@@ -3,9 +3,11 @@
 /**
  * Module dependencies.
  */
-const debug = require('debug')('homechallenge:server');
-const http = require('http');
-const app = require('../app');
+import Debug from 'debug' ;
+import http from 'http';
+import app from '../app.mjs';
+
+const debug = Debug('homechallenge:server');
 
 /**
  * Normalize a port into a number, string, or false.

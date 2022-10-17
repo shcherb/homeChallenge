@@ -2,12 +2,13 @@
   "name": "home-task",
   "version": "0.0.0",
   "private": false,
+  "type": "module",
   "scripts": {
     "start": "NODE_ENV=development node ./src/bin/server",
     "lint": "eslint --ignore-path .gitignore . --fix",
     "build:openapi": "swagger-cli bundle openapi/src/index.yaml --outfile openapi/openapi.yaml --type yaml",
-    "test": "NODE_ENV=test jest --coverage",
-    "test:nocover": "NODE_ENV=test jest --verbose"
+    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "test:nocover": "NODE_ENV=test node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose"
   },
   "dependencies": {
     "axios": "^1.1.2",
