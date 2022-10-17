@@ -16,7 +16,6 @@ logs
 
 # Configuration
 .env
-.env.*
 !.env.test
 !.env.example
 
