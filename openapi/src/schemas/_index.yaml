@@ -1,0 +1,7 @@
+# Shared
+ErrorObject:
+  $ref: "./shared/ErrorObject.yaml"
+
+# Schemas
+activity:
+  $ref: "./activity.yaml"

@@ -1,0 +1,18 @@
+type: object
+properties:
+  error:
+    type: object
+    properties:
+      code:
+        type: string
+        description: >-
+          System-friendly error code for this Error.
+      message:
+        type: string
+        description: >-
+          Human-friendly error message for this Error.
+
+          This error message is not intended for end-user presentation.
+    required:
+      - message
+    additionalProperties: false

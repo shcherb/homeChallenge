@@ -1,0 +1,26 @@
+# Build derectories
+dist
+tmp
+coverage
+
+# Node
+node_modules
+logs
+*.log
+
+# Git
+.git
+
+# Jetbrains IDE
+.idea
+
+# Configuration
+.env
+.env.*
+!.env.test
+!.env.example
+
+# MacOs
+.DS_Store
+.AppleDouble
+.LSOverride

@@ -1,0 +1,6 @@
+description: >-
+  Requested URL not found.
+content:
+  application/json:
+    schema:
+      $ref: "./../schemas/shared/ErrorObject.yaml"

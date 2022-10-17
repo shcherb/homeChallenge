@@ -1,0 +1,27 @@
+openapi: "3.0.0"
+info:
+  title: "Test project"
+  description: "ONly for testing purpose"
+  version: "1.0.0"
+  contact:
+    email: "info@email.org"
+servers:
+  - url: https://localhost:{port}
+    description: Local
+    variables:
+      port:
+        enum:
+          - "4444"
+          - "5555"
+          - "7777"
+        default: "5555"
+tags:
+  - name: Example
+    description: Example
+paths:
+  $ref: "./paths/_index.yaml"
+components:
+  schemas:
+    $ref: "./schemas/_index.yaml"
+  responses:
+    $ref: "./responses/_index.yaml"

@@ -1,0 +1,28 @@
+type: object
+additionalProperties: false
+properties:
+  activity:
+    type: string
+  accessibility:
+    type: string
+  type:
+    type: string
+  participants:
+    type: number
+    nullable: false
+  price:
+    type: string
+  link:
+    type: string
+    nullable: true
+  key:
+    type: string
+    nullable: false
+required:
+  - activity
+  - accessibility
+  - type
+  - participants
+  - price
+  - link
+  - key

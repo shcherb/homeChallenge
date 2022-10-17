@@ -1,0 +1,18 @@
+get:
+  summary: getActivity
+  description: >-
+    get activity info
+  operationId: getActivity
+  tags:
+    - Example
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: "./../../schemas/activity.yaml"
+    "404":
+      $ref: "./../../responses/404.yaml"
+    "500":
+      $ref: "./../../responses/500.yaml"

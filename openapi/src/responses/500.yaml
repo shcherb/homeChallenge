@@ -1,0 +1,6 @@
+description: >-
+  Internal Server error in case of issues on our side or if Bored API throws an error
+content:
+  application/json:
+    schema:
+      $ref: "./../schemas/shared/ErrorObject.yaml"
